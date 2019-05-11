@@ -6,18 +6,20 @@ import "./navbar.css"
 const NavigationBar = (props) => {
   return (
     <div>
-    <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="#home"><img className="logo" src={require('../../google.png')} /></Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-
-          <div ><Nav.Link style={{color: 'skyblue'}} href="#home" >Overview</Nav.Link></div>
-          <Nav.Link style={{color: 'white'}} href="#link">Tech Specs</Nav.Link>
-          <Nav.Link style={{color: 'white'}} href="#link">Compare</Nav.Link>
-          <Nav.Link style={{color: 'white'}} href="#link">Switch To Pixel</Nav.Link>
-  
-
+        </Nav>
+        <Nav>
+          <Nav.Link href="#deets">About</Nav.Link>
+          <Nav.Link href="#memes">
+            Work
+          </Nav.Link>
+          <Nav.Link href="#memes">
+          Contact
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -1,8 +1,9 @@
 import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import "./jumbo.css"
+import SocialIcons from '../socialicons/socialicons'
 const Jumbo = (props) => {
-  const { style, heading, caption } = props
+  const { style, heading, caption,para, social } = props
   return (
     <div>
       <Jumbotron className={style}>
@@ -11,7 +12,8 @@ const Jumbo = (props) => {
              <h2>
                { heading }
              </h2>
-             <button className="btn btn-outline-primary mt-5">Sign Up</button>
+             <p>{para}</p>
+             { social ? <SocialIcons/> : null}
           </div>
           : null
         }
