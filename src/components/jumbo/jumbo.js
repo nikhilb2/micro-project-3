@@ -8,7 +8,6 @@ const Jumbo = (props) => {
       <Jumbotron className={style}>
         {caption
           ? <div className="mt-5">
-             <img className="logo" src={require('../../google.png')} />
              <h2>
                { heading }
              </h2>
